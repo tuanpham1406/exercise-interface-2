@@ -1,4 +1,4 @@
-public class Square extends Rectangle implements Colorable{
+public class Square extends Rectangle implements ResizeAble {
     public Square() {
     }
 
@@ -36,7 +36,7 @@ public class Square extends Rectangle implements Colorable{
     }
 
     @Override
-    public String howToColor() {
-        return "Color all four sides.";
+    public double resize(double percent) {
+        return getArea()*percent;
     }
 }
